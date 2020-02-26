@@ -1,0 +1,7 @@
+#!/bin/sh
+tmux new-session -d 'weechat'
+tmux split-window -h 'w3m https://www.duckduckgo.com'
+tmux split-window -v 'nethunter' 
+tmux split-window 
+tmux select-layout tiled
+tmux -2 attach-session -d
